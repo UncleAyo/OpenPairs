@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+    <title>OpenPairs Roommate Survey</title>
+
+    <!--  My Stylesheets  -->
+    <link rel="stylesheet" type='text/css' href="{% static 'style.css' %}">
+
+
+</head>
+<body> 
+</body>
+</html>
+<!--
+    <div class="container" style="text-align: center;">
+        <a href=" {% url 'homepage' %} "><img src="{% static 'logo2.png' %} " style="max-height: 500px; max-width: 50%; " /></a>
+        <h1>Boys List</h1>
+        <table class="table table-hover table-dark" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th scope="col">Year Two</th>
+                    <th scope="col">Year One</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for b_keys, b_values in b_results %}
+                <tr>
+                    <td>{{ b_keys }}</td>
+                    <td>{{ b_values }}</td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h1>Girls List</h1>
+        <table class="table table-hover table-dark" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th scope="col">Year Two</th>
+                    <th scope="col">Year One</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for g_keys, g_values in g_results %}
+                <tr>
+                    <td>{{ g_keys }}</td>
+                    <td>{{ g_values }}</td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <h6>Openpairs &copy; 2020</h6>
+    </footer>
+
+</body>
+</html>
+-->

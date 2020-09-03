@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+    <title>OpenPairs Roommate Survey</title>
+
+    <!--  My Stylesheets  -->
+    <link rel="stylesheet" type='text/css' href="{% static 'style.css' %}">
+
+
+</head>
+
+<body>
+
+    <div class="container" style="text-align:center;">
+        <a href=" {% url 'homepage' %} "><img src="{% static 'logo2.png' %} " style="max-height: 300px; width: 80%; " /></a>
+
+        <form method="post" style="text-align:left;">
+
+            <h5>Please complete this survey with all honesty while keeping in mind that you will be in a school environment as you fill this survey. Also, complete this survey with patience as it would be the only tool used to match you with a roommate for
+                the year. Note that we shall not share any information you fill in this form with any external party.<br/><br/> Disclaimer: You are most likely not going to get your soul mate but OpenPairs promises to get you your best match.</h5>
+
+            {% csrf_token %} {% for field in form %}
+            <br/>
+            <p>{{ field.label }}</p>
+            <p>{{ field }}</p>
+            <hr/> {% endfor %}<br/>
+
+            <button type='submit'>Submit</button>
+        </form>
+        <a href="{% url 'results' %} ">Results</a>
+
+    </div>
+    <footer>
+        <h6>Openpairs &copy; 2020</h6>
+    </footer>
+
+</body>
+</html>

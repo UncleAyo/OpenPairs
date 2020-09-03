@@ -1,0 +1,1 @@
+web: gunicorn openpairsproject.wsgi --log-file -

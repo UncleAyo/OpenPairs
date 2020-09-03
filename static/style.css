@@ -1,0 +1,137 @@
+ul {
+    list-style: none;
+}
+
+p {
+    /*color: #fff;*/
+    list-style: none;
+}
+
+body {
+    background-color: #000;
+    font-family: Garamond, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container {
+    padding-top: 10px !important;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+
+.table-dark {
+    background: none;
+}
+
+h1 {
+    margin-left: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.8em;
+    color: #ffffff;
+}
+
+h5 {
+    margin-left: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+hr {
+    background-color: #fff;
+}
+
+h6 {
+    margin-left: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+
+.form {
+    width: 400px;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.formStyle {
+    background-color: #000;
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ecf0f1;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 1em;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.formButton {
+    /*float: right;*/
+    background-color: #ffffff;
+    display: inline-block;
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 6px 24px;
+    margin-top: 15px;
+    margin-right: 60px;
+    text-decoration: none;
+    border: 0;
+}
+
+.formButton:hover {
+    background-color: #000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.formButton:active {
+    position: relative;
+    top: 3px;
+}
+
+
+/*
+label {
+    color: red !important;
+    
+}
+
+
+/*To remove the outline that appears on clicking the input textbox*/
+
+input:focus {
+    outline: none;
+}
+
+
+/* To format the placeholder text color */
+
+ ::-webkit-input-placeholder {
+    color: #ecf0f1;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    color: #ecf0f1;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ecf0f1;
+}
+
+ :-ms-input-placeholder {
+    color: #ecf0f1;
+}
